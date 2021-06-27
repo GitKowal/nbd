@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl9f9KgfIpTImMfKMFHF9xZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23871>; rel="up"
+Last-Modified: Sun, 27 Jun 2021 16:34:25 GMT
+ETag: "2Qg0GdnSDlyzslIrC9QxVm"
+Date: Sun, 27 Jun 2021 16:37:21 GMT
+Content-Type: application/json
+Content-Length: 26
+
+{"name": "SZD-50 Puchacz"}

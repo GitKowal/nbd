@@ -1,0 +1,33 @@
+1.	Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD-50 Puchacz", "active": true, "manufacturer": "PZL Bielsko", "crew:": 2, "wingspan": 16.67}' http://localhost:8098/buckets/s23871/keys/puchacz > wynik1.txt
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD-30 Pirat", "active": true, "manufacturer": "PZL Bielsko", "crew:": 1, "wingspan": 15.00}' http://localhost:8098/buckets/s23871/keys/pirat >> wynik1.txt
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD 56 Diana", "active": true, "manufacturer": "Avionic", "crew:": 1, "wingspan": 15.00}' http://localhost:8098/buckets/s23871/keys/diana >> wynik1.txt
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "KR-03 Puchatek", "active": true, "manufacturer": "PZL Krosno", "crew:": 2, "wingspan": 16.40}' http://localhost:8098/buckets/s23871/keys/puchatek >> wynik1.txt
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD-C Żuraw", "active": false, "manufacturer": "ZSLS 4 Gdańsk", "crew:": 1, "wingspan": 18.00}' http://localhost:8098/buckets/s23871/keys/zuraw >> wynik1.txt
+
+2.	Pobierz z bazy jedną z dodanych przez Ciebie wartości.
+curl -i -XGET  http://localhost:8098/buckets/s23871/keys/puchatek > wynik2.txt
+
+3.	Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "KR-03 Puchatek", "active": true, "manufacturer": "PZL Krosno", "crew:": 2, "wingspan": 16.40, "firstFlight": 1986}' http://localhost:8098/buckets/s23871/keys/puchatek > wynik3.txt
+
+4.	Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD-C Żuraw", "manufacturer": "ZSLS 4 Gdańsk", "crew:": 1, "wingspan": 18.00}' http://localhost:8098/buckets/s23871/keys/zuraw > wynik4.txt
+
+5.	Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.  
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "SZD-50 Puchacz", "active": false, "manufacturer": "PZL Bielsko", "crew:": 2, "wingspan": 16.67}' http://localhost:8098/buckets/s23871/keys/puchacz > wynik5.txt
+
+6.	Usuń jeden z dokumentów z bazy.
+curl -i -XDELETE http://localhost:8098/buckets/s23871/keys/diana > wynik6.txt
+
+7.	Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
+curl -i -XGET http://localhost:8098/buckets/s23871/keys/junior > wynik7.txt
+
+8.	Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
+curl -i -XPOST -H "Content-Type: application/json" -d '{"name": "SZD-50 Puchacz"}' http://localhost:8098/buckets/s23871/keys > wynik8.txt
+
+9.	Pobierz z bazy element z zadania 8. 
+curl -i -XGET  http://localhost:8098/buckets/s23871/keys/Yq0pzqxglYNm60SGbfb5dNMWsmw > wynik9.txt
+
+10.	Usuń z bazy element z zadania 8. 
+curl -i -XDELETE http://localhost:8098/buckets/s23871/keys/Yq0pzqxglYNm60SGbfb5dNMWsmw > wynik10.txt

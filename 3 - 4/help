@@ -1,0 +1,5 @@
+winpty docker exec -it ad mongoimport --file ./home/import/cwiczenia2.json --db nbd --jsonArray -c people
+winpty docker exec -it ad mongo
+mongo nbd zapyt9.js > ./../results/wynik9.json
+
+

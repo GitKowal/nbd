@@ -1,0 +1,81 @@
+﻿[
+  {
+    "destination": {
+"identity": 178,
+"labels": [
+        "town"
+      ],
+"properties": {
+"name": "Rimbik"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 180,
+"labels": [
+        "village"
+      ],
+"properties": {
+"name": "BhikeBhanja"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 181,
+"labels": [
+        "peak"
+      ],
+"properties": {
+"name": "Sandakphu",
+"altitude": "12400 ft"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 182,
+"labels": [
+        "village"
+      ],
+"properties": {
+"name": "Sirikhola"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 183,
+"labels": [
+        "village"
+      ],
+"properties": {
+"name": "Gurdum"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 186,
+"labels": [
+        "village"
+      ],
+"properties": {
+"name": "Rammam"
+      }
+    }
+  },
+  {
+    "destination": {
+"identity": 187,
+"labels": [
+        "peak"
+      ],
+"properties": {
+"name": "Sabargram",
+"altitude": "10000 ft"
+      }
+    }
+  }
+]

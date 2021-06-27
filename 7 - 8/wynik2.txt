@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl9ftt0fIpTImMfK8Ebe9xZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23871>; rel="up"
+Last-Modified: Sun, 27 Jun 2021 16:14:36 GMT
+ETag: "1nEMrR4qDgZO5F2usXUx7k"
+Date: Sun, 27 Jun 2021 16:16:05 GMT
+Content-Type: application/json
+Content-Length: 103
+
+{"name": "KR-03 Puchatek", "active": true, "manufacturer": "PZL Krosno", "crew:": 2, "wingspan": 16.40}

@@ -1,0 +1,5 @@
+docker run \
+  -p 8087:8087 \
+  -p 8098:8098 \
+  -d \
+  basho/riak-kv:ubuntu-2.2.3

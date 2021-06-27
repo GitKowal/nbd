@@ -1,0 +1,4 @@
+Do bazy (bucket: s23871) wrzucam dokument (klucz: PrzyklKlucz; wartość: PrzyklWartość)
+Pobrana wartość spod klucza (PrzyklKlucz): PrzyklWartość
+Pobrana wartość spod klucza (PrzyklKlucz) po modyfikacji: PrzyklWartośćZmod
+Pobrana wartość spod klucza (PrzyklKlucz) po usunięciu: null
